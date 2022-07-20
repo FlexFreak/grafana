@@ -1,10 +1,6 @@
 name: Create or update GitHub release
-on:
-  workflow_dispatch:
-    inputs:
-      version:
-        required: true        
-        description: Needs to match, exactly, the name of a milestone (NO v prefix)
+on: [push]
+    
 jobs:
   main:
     runs-on: ubuntu-latest
