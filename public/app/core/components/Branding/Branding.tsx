@@ -59,7 +59,7 @@ export class Branding {
   static LoginBackground = LoginBackground;
   static MenuLogo = MenuLogo;
   static LoginBoxBackground = LoginBoxBackground;
-  static AppTitle = 'Grafana';
+  static AppTitle = 'DocPit';
   static LoginTitle = 'Welcome to DocPit';
   static GetLoginSubTitle = (): null | string => {
     return null;
