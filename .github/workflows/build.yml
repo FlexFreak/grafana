@@ -12,11 +12,12 @@ jobs:
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: start #Building
-      - name: list dir
-        run: ls -al
+      - name: copying files 
+        run: cp public/build artifacts
+        run: cp public/views artifacts
       - name: Archive 
         uses: actions/upload-artifact@v2
         with:
           name: public
-          path: public/
+          path: artifacts
       
