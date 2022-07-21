@@ -6,11 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: installing dependencies
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: install --immutable #Install dependencies 
-      - name: building...
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: start #Building
