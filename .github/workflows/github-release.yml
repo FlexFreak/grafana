@@ -1,5 +1,5 @@
 name: Create or update GitHub release
-on: [push]
+on: [release]
     
 jobs:
   main:
