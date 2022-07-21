@@ -39,7 +39,7 @@
     "prettier:check": "prettier --check --list-different=false --loglevel=warn \"**/*.{ts,tsx,scss,md,mdx}\"",
     "prettier:checkDocs": "prettier --check --list-different=false --loglevel=warn \"docs/**/*.md\" \"*.md\" \"packages/**/*.{ts,tsx,scss,md,mdx}\"",
     "prettier:write": "prettier --list-different \"**/*.{js,ts,tsx,scss,md,mdx}\" --write",
-    "start": "yarn themes:generate && yarn dev --watch",
+    "start": "yarn themes:generate && yarn dev",
     "start:noTsCheck": "yarn start --env noTsCheck=1",
     "start:hot": "yarn themes:generate && NODE_ENV=hot yarn dev --config scripts/webpack/webpack.hot.js",
     "stats": "webpack --mode production --config scripts/webpack/webpack.prod.js --profile --json > compilation-stats.json",
