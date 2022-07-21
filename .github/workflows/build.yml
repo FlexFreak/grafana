@@ -12,3 +12,5 @@ jobs:
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: start #Building
+      - name: list dir
+      - run: ls -al
