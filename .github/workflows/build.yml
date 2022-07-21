@@ -13,8 +13,7 @@ jobs:
         with:
           cmd: start #Building
       - name: copying files 
-        run: cp public/build artifacts
-        run: cp public/views artifacts
+        run: cp public/build artifacts && cp public/views artifacts
       - name: Archive 
         uses: actions/upload-artifact@v2
         with:
