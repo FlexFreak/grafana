@@ -13,4 +13,4 @@ jobs:
         with:
           cmd: start #Building
       - name: list dir
-      - run: ls -al
+        run: ls -al
