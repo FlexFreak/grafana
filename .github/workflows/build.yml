@@ -14,7 +14,7 @@ jobs:
           cmd: start #Building
       - name: list dir
         run: ls -al
-      - name: Archive (${{ steps.variables.outputs.display-name }})
+      - name: Archive 
         uses: actions/upload-artifact@v2
         with:
           name: public
