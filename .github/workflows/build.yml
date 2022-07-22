@@ -19,6 +19,8 @@ jobs:
         with:
           name: public
           path: artifacts
+      - name: copying files 
+        run: ls -al
       - name: release
         uses: actions/create-release@v1
         id: create_release
