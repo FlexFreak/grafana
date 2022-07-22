@@ -26,8 +26,7 @@ jobs:
           draft: false
           prerelease: false
           release_name: ${{ steps.version.outputs.version }}
-          tag_name: ${{ github.ref }}
-          body_path: CHANGELOG.md
+          tag_name: beta
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - name: upload linux artifact
