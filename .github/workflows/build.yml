@@ -6,14 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: install --immutable #Install dependencies 
-      - uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: start #Building
+      #- uses: borales/actions-yarn@v3.0.0
+      #  with:
+      #    cmd: install --immutable #Install dependencies 
+      #- uses: borales/actions-yarn@v3.0.0
+      #  with:
+      #    cmd: start #Building
       - name: copying files 
-        run: mkdir artifacts && cp public/build artifacts -r && cp public/views artifacts -r && cp public/sass artifacts
+        run: mkdir artifacts && cp public/views artifacts -r && cp public/sass artifacts #&& cp public/build artifacts -r
       - name: Ziiiippppp
         uses: actions/upload-artifact@v2
         with:
