@@ -14,7 +14,7 @@ jobs:
           cmd: start #Building
       - name: copying files 
         run: mkdir artifacts && cp public/build artifacts -r && cp public/views artifacts -r
-      - name: Archive 
+      - name: Ziiiippppp
         uses: actions/upload-artifact@v2
         with:
           name: public
