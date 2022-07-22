@@ -14,19 +14,16 @@ export let getFooterLinks = (): FooterLink[] => {
   return [
     {
       text: 'Documentation',
-      icon: 'document-info',
       url: 'https://grafana.com/docs/grafana/latest/?utm_source=grafana_footer',
       target: '_blank',
     },
     {
       text: 'Support',
-      icon: 'question-circle',
       url: 'https://grafana.com/products/enterprise/?utm_source=grafana_footer',
       target: '_blank',
     },
     {
       text: 'Community',
-      icon: 'comments-alt',
       url: 'https://community.grafana.com/?utm_source=grafana_footer',
       target: '_blank',
     },
@@ -50,7 +47,6 @@ export let getVersionLinks = (): FooterLink[] => {
     links.push({
       id: 'updateVersion',
       text: `New version available!`,
-      icon: 'download-alt',
       url: 'https://grafana.com/grafana/download?utm_source=grafana_footer',
       target: '_blank',
     });
