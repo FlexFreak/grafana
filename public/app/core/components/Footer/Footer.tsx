@@ -6,7 +6,6 @@ import { config } from '@grafana/runtime';
 export interface FooterLink {
   text: string;
   id?: string;
-  icon?: IconName;
   url?: string;
   target?: string;
 }
