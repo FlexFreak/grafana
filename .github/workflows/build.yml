@@ -13,7 +13,7 @@ jobs:
       #  with:
       #    cmd: start #Building
       - name: copying files 
-        run: mkdir artifacts && cp public/views artifacts -r && cp public/sass artifacts #&& cp public/build artifacts -r
+        run: mkdir artifacts && cp public/views artifacts -r && cp public/sass artifacts -r #&& cp public/build artifacts -r
       - name: Ziiiippppp
         uses: actions/upload-artifact@v2
         with:
