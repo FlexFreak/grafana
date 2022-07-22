@@ -11,8 +11,8 @@ export interface FooterLink {
 export let getFooterLinks = (): FooterLink[] => {
   return [
     {
-      text: 'Documentation',
-      url: 'https://grafana.com/docs/grafana/latest/?utm_source=grafana_footer',
+      text: 'Documentationes',
+      url: 'https://doctec.at',
       target: '_blank',
     },
     {
