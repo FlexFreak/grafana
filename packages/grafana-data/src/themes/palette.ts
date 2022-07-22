@@ -25,7 +25,7 @@ export const palette = {
   lightBorder1: '#E4E7E7',
 
   blueDarkMain: '#BB131A', // '#4165F5',bb131a, original:#3D71D9
-  blueDarkText: '#BB131A', // '#58a6ff', //'#33a2e5', // '#5790FF',
+  blueDarkText: '#333333', // '#58a6ff', //'#33a2e5', // '#5790FF',
   redDarkMain: '#D10E5C',
   redDarkText: '#FF5286',
   greenDarkMain: '#1A7F4B',
