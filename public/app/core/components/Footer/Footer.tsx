@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
 
-import { config } from '@grafana/runtime';
-
 
 export interface FooterLink {
   text: string;
