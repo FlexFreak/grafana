@@ -178,7 +178,7 @@ $table-bg-hover: ${theme.colors.emphasize(theme.colors.background.primary, 0.05)
 // Buttons
 // -------------------------
 $btn-primary-bg: $blue-base;
-$btn-primary-bg-hl: $blue-shade;
+$btn-primary-bg-hl: $theme.colors.action.hover;
 
 $btn-secondary-bg: $dark-6;
 $btn-secondary-bg-hl: lighten($dark-6, 4%);

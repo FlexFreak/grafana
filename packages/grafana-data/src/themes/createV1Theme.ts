@@ -131,8 +131,8 @@ export function createV1Theme(theme: Omit<GrafanaTheme2, 'v1'>): GrafanaTheme {
     yellow: '#ecbb13',
     purple: '#9933cc',
     variable: '#32d1df',
-    orange: '#eb7b18',
-    orangeDark: '#ff780a',
+    orange: '#bb131a',
+    orangeDark: '#bb131a',
   };
 
   const backgrounds = {

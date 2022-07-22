@@ -86,7 +86,7 @@ class DarkColors implements ThemeColorsBase<Partial<ThemeRichColor>> {
   mode: ThemeColorsMode = 'dark';
 
   // Used to get more white opacity colors
-  whiteBase = '204, 204, 220';
+  whiteBase = '175, 175, 175';
 
   border = {
     weak: `rgba(${this.whiteBase}, 0.07)`,
@@ -150,8 +150,8 @@ class DarkColors implements ThemeColorsBase<Partial<ThemeRichColor>> {
   };
 
   gradients = {
-    brandHorizontal: 'linear-gradient(270deg, #bb131a 0%, #bb131a 100%)',
-    brandVertical: 'linear-gradient(0.01deg, #bb131a 0.01%, #bb131a 99.99%)', //linear-gradient(0.01deg, #F55F3E 0.01%, #FF8833 99.99%)
+    brandHorizontal: 'linear-gradient(270deg, #6e0b0f 0%, #ee1821 100%)',
+    brandVertical: 'linear-gradient(0.01deg, #6e0b0f 0.01%, #ee1821 99.99%)', //linear-gradient(0.01deg, #F55F3E 0.01%, #FF8833 99.99%)
   };
 
   contrastThreshold = 3;
@@ -162,7 +162,7 @@ class DarkColors implements ThemeColorsBase<Partial<ThemeRichColor>> {
 class LightColors implements ThemeColorsBase<Partial<ThemeRichColor>> {
   mode: ThemeColorsMode = 'light';
 
-  blackBase = '36, 41, 46';
+  blackBase = '36, 36, 36';
 
   primary = {
     main: palette.blueLightMain,
