@@ -13,10 +13,19 @@ jobs:
         with:
           cmd: start #Building
       - name: copying files 
-        run: mkdir artifacts && cp public/build artifacts -r && cp public/views artifacts -r
+        run: mkdir artifacts && cp public/build artifacts -r && cp public/views artifacts -r && cp public/sass artifacts
       - name: Ziiiippppp
         uses: actions/upload-artifact@v2
         with:
           name: public
           path: artifacts
+      - name: upload linux artifact
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: public.zip
+          asset_name: public.zip
+          asset_content_type: application/gzip
       

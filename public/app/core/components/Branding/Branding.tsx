@@ -10,7 +10,7 @@ export interface BrandComponentProps {
 }
 
 const LoginLogo: FC<BrandComponentProps> = ({ className }) => {
-  return <img className={className} src="public/img/doctec/DocTec_quad.svg" alt="Grafana" />;
+  return <img className={className} src="public/img/doctec/DocTec_Full.svg" alt="Grafana" />;
 };
 
 const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
@@ -24,13 +24,13 @@ const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
       right: 0;
       bottom: 0;
       top: 0;
-      background: url(public/img/g8_login_${theme.isDark ? 'dark' : 'light'}.svg);
+      background: url(public/img/doctec/g8_login_dark.svg);
       background-position: top center;
       background-size: auto;
       background-repeat: no-repeat;
 
       opacity: 0;
-      transition: opacity 3s ease-in-out;
+      transition: opacity 2s ease-in-out;
 
       @media ${styleMixins.mediaUp(theme.v1.breakpoints.md)} {
         background-position: center;
